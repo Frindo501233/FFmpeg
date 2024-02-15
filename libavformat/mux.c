@@ -360,9 +360,9 @@ FF_ENABLE_DEPRECATION_WARNINGS
         av_dict_set(&s->metadata, "encoder", NULL, 0);
     }*/
 
-    for (e = NULL; e = av_dict_get(s->metadata, "encode", e, AV_DICT_IGNORE_SUFFIX); ) {
+    /*for (e = NULL; e = av_dict_get(s->metadata, "encode", e, AV_DICT_IGNORE_SUFFIX); ) {
         av_dict_set(&s->metadata, e->key, NULL, 0);
-    }
+    }*/
 
     if (options) {
          av_dict_free(options);
